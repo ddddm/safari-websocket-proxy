@@ -1,0 +1,10 @@
+{
+  "name": "node-websocket-proxy",
+  "version": "0.1.0",
+  "dependencies": {
+    "http-proxy": "git://github.com/ddddm/node-http-proxy.git#master"
+  },
+  "scripts": {
+    "start": "node index"
+  }
+}
