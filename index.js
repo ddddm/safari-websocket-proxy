@@ -1,4 +1,5 @@
 let httpProxy = require('http-proxy');
+const port = process.env.PORT || 3020;
 
 var proxy = httpProxy.createProxyServer({
   ws : true,
@@ -22,4 +23,4 @@ server.on('upgrade',function(req,res, head){
   proxy.ws(req, res, head);
 })
 
-server.listen(3020);
+server.listen(port);
